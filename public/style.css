@@ -109,6 +109,7 @@ strong {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-size: 75%;
   }
   body,
   ul {
@@ -140,6 +141,7 @@ strong {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-size: 90%;
   }
   body,
   ul {
