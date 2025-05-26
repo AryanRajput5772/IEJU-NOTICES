@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B.E. Notices - Jiwaji University</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <h1>B.E. Notices (Jiwaji University)</h1>
-    <ol>
+    <form id="searchForm" class="search-form">
+      <input type="text" id="searchInput" placeholder="Search notices..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <ul>
       <% notices.forEach(notice => { %>
       <li>
         <div class="box">
@@ -16,6 +22,8 @@
         </div>
       </li>
       <% }) %>
-    </ol>
+    </ul>
+
+    <script src="/search.js"></script>
   </body>
 </html>

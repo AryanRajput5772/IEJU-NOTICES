@@ -12,12 +12,12 @@ h1 {
   font-size: 50px;
   color: transparent;
   background: linear-gradient(90deg, #fcff00, #ff7b00);
-
+  text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-ol {
-  padding-left: 20px;
+ul {
+  list-style-type: none;
 }
 li {
   margin-bottom: 10px;
@@ -38,8 +38,74 @@ a:hover {
   padding: 26px;
   box-shadow: inset 1px 0px 20px 17px rgb(0 0 0 / 76%);
 }
+
 strong {
   color: #000000;
   font-family: "Lucida Console", Courier, monospace;
   font-size: 17px;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 1px 18px 13px rgba(0, 0, 0, 0.3);
+}
+
+.search-form input[type="text"] {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  background: linear-gradient(91deg, #0079fff5, #fd668d);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: yellow;
+
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: linear-gradient(91deg, #00a6fff5, #e666fd);
+}
+
+@media (max-width: 500px) {
+  .box {
+    padding: 40px;
+    border-radius: 20px;
+    width: 273px;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  body,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
