@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>B.E. Notices - Jiwaji University</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>B.E. Notices (Jiwaji University)</h1>
+    <ol>
+      <% notices.forEach(notice => { %>
+      <li>
+        <div class="box">
+          <strong><%= notice.date %></strong>:
+          <a href="<%= notice.link %>" target="_blank"><%= notice.text %></a>
+        </div>
+      </li>
+      <% }) %>
+    </ol>
+  </body>
+</html>
