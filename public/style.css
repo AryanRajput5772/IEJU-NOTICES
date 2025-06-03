@@ -163,3 +163,20 @@ strong {
     width: 120px;
   }
 }
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* background: #000000; */
+  background: #171c1d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.loader img {
+  width: 400px;
+  height: 300px;
+}

@@ -10,13 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=MedievalSharp&family=Mystery+Quest&family=Satisfy&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
+    <script>
+      window.onload = function () {
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      };
+    </script>
   </head>
   <body>
+    <div class="loader">
+      <img
+        src=" https://i.pinimg.com/originals/dc/cc/84/dccc846959dffafa30a836dfacf9bab9.gif "
+        alt="" />
+    </div>
     <button
       class="back-btn"
       onclick="location.href='https://aryanrajput5772.github.io/IEJU-Archive/index.html'">
       ◀ Back
     </button>
+
     <h1>B.E. Notices (Jiwaji University)</h1>
     <form id="searchForm" class="search-form">
       <input type="text" id="searchInput" placeholder="Search notices..." />
