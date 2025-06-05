@@ -71,14 +71,14 @@ strong {
 }
 
 .search-form button {
-  padding: 8px 15px;
+  padding: 10px 15px;
   background: linear-gradient(91deg, #0079fff5, #fd668d);
   border: none;
   border-radius: 8px;
   font-size: 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: yellow;
-
+  box-shadow: inset 0px 1px 6px 5px #090909c7;
   cursor: pointer;
 }
 
