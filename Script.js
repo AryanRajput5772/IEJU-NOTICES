@@ -26,7 +26,11 @@ async function fetchBENotices() {
         .each((i, a) => {
           const text = $(a).text();
           const href = $(a).attr("href");
-          if (/B\.E\./i.test(text) || /Result/i.test(text)) {
+          if (
+            /B\.E\./i.test(text) ||
+            /\b(Result)\b/.test(text) ||
+            /\b(RESULT)\b/.test(text)
+          ) {
             notices.push({ text, link: href, date });
           }
         });
