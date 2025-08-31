@@ -10,8 +10,7 @@ app.set("view engine", "ejs"); // set EJS as view engine
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
-const url =
-  "https://jiwaji.edu/notice-board-new-update-information-for-the-year-2024/";
+const url = "https://jiwaji.edu/timetable/";
 
 async function fetchBENotices() {
   try {
