@@ -52,3 +52,14 @@ app.get("/", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+//prev package.json
+// {
+//   "description": "",
+//   "dependencies": {
+//     "axios": "^1.9.0",
+//     "cheerio": "^1.0.0",
+//     "ejs": "^3.1.10",
+//     "express": "^5.1.0"
+//   }
+// }
